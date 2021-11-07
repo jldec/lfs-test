@@ -8,11 +8,14 @@ tasks:
       echo '*** git status ***' >> prebuild.log
       git status >> prebuild.log
 
-      echo '*** yarn install ***' >> prebuild.log
-      yarn install >> prebuild.log
+      echo '*** git lfs ls-files ***' >> prebuild.log
+      git lfs ls-files >> prebuild.log 2>>prebuild.log
+
+      # echo '*** yarn install ***' >> prebuild.log
+      # yarn install >> prebuild.log
 
       # echo '*** brew install git-lfs ***' >> prebuild.log
-      # brew install git-lfs >> prebuild.log
+      # brew install git-lfs >>prebuild.log
 
       # echo '*** git lfs install ***' >> prebuild.log
       # git lfs install >> prebuild.log
