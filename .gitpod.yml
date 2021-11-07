@@ -1,5 +1,7 @@
 tasks:
   - init: |
-      echo 'TODO: build project'
+      echo 'hello gitpod prebuild init'
+      pwd > prebuild.log
+      git config -l >> prebuild.log
     command: |
-      echo 'TODO: start app'
+      echo 'hello gitpod workspace command'
