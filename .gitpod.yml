@@ -2,19 +2,23 @@ tasks:
   - init: |
       echo '*** gitpod prebuild init ***' > prebuild log
 
-      echo '*** git config ***' > prebuild log
+      echo '*** git config ***' >> prebuild log
       git config -l >> prebuild.log
 
-      echo '*** brew install git-lfs ***' > prebuild log
-      brew install git-lfs >> prebuild.log
+      echo '*** git status ***' >> prebuild log
+      git status >> prebuild.log
 
-      echo '*** git lfs install ***' > prebuild log
-      git lfs install >> prebuild.log
+      # echo '*** brew install git-lfs ***' >> prebuild log
+      # brew install git-lfs >> prebuild.log
 
-      echo '*** git lfs pull ***' > prebuild log
-      git lfs pull >> prebuild.log
+      # echo '*** git lfs install ***' >> prebuild log
+      # git lfs install >> prebuild.log
 
-      echo '*** gitpod prebuild init done ***' > prebuild log
+      # echo '*** git lfs pull ***' >> prebuild log
+      # git lfs pull >> prebuild.log
+
+      echo '*** gitpod prebuild init done ***' >> prebuild log
+
     command: |
       echo 'hello gitpod workspace command'
       sleep 3600
