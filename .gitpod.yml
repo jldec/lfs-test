@@ -6,3 +6,7 @@ tasks:
     command: |
       echo 'hello gitpod workspace command'
       sleep 3600
+
+github:
+  prebuilds:
+    branches: true
