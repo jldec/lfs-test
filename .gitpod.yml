@@ -1,0 +1,2 @@
+tasks:
+  - before: git lfs install
