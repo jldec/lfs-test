@@ -1,2 +1,2 @@
 tasks:
-  - before: git lfs install
+  - before: git lfs pull
