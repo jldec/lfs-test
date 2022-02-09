@@ -1,3 +1,3 @@
 tasks:
   - before: git lfs pull
-  - init: ls -l
+    init: ls -l
