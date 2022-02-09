@@ -1,6 +1,6 @@
 # lfs-test
 
-This repo can be used for testing git lfs support in Gitpod.
+This repo can be used for testing git lfs support in [Gitpod](https://gitpod.io).
 
 The file [.gitattributes](.gitattributes) is configured to track all `.png` files in LFS.  
 
